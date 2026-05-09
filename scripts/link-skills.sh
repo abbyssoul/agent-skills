@@ -75,5 +75,9 @@ fi
 if [ -d "$HOME/.agents" ]; then
   echo "Linking for general agent tools (~/.agents)..."
   link_skills "$HOME/.agents/skills"
-  link_agents "$HOME/.agents/agents"
+fi
+
+if [ -d "$HOME/.config/opencode" ]; then
+  echo "Linking agents for OpenCode..."
+  link_agents "$HOME/.config/opencode/agents"
 fi

@@ -65,7 +65,7 @@ The script links skills and agents into supported local runtime directories when
 - `~/.claude/skills`
 - `~/.claude/agents`
 - `~/.agents/skills`
-- `~/.agents/agents`
+- `~/.config/opencode/agents`
 
 The links point back into this repository, so edits here are immediately reflected in local agent tools.
 

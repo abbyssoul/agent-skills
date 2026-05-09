@@ -38,5 +38,9 @@ fi
 if [ -d "$HOME/.agents" ]; then
   echo "Unlinking for general agent tools (~/.agents)..."
   unlink_items "$HOME/.agents/skills"
-  unlink_items "$HOME/.agents/agents"
+fi
+
+if [ -d "$HOME/.config/opencode" ]; then
+  echo "Unlinking agents for OpenCode..."
+  unlink_items "$HOME/.config/opencode/agents"
 fi
