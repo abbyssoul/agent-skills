@@ -75,6 +75,12 @@ To list available skills:
 ./scripts/list-skills.sh
 ```
 
+To remove all symlinks pointing to this repository from your local runtime directories (useful for cleaning up stale or broken links if you delete or rename an agent/skill in this repo):
+
+```bash
+./scripts/unlink-skills.sh
+```
+
 ## Adding A Skill
 
 Create a new directory under `skills/` with a `SKILL.md` file:
